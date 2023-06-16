@@ -1,0 +1,6 @@
+.header__logo {
+    padding-top: 14px;
+    @include logo-font;
+    font-size: 30px;
+    text-align: center;
+}

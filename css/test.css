@@ -1,0 +1,80 @@
+/****** General ***********/
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --main-bg-color: #EAEAEA;
+    --btn-color: #9356DC;
+    --small-btn-color: #99E2D0;
+
+}
+
+html {
+    padding: 0;
+
+}
+
+
+
+/****** General ***********/
+
+/****** Header ***********/
+header>.main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-header>img {
+    width: 162px;
+    height: 30px;
+}
+
+/****** Header ***********/
+
+/****** Main ***********/
+/****** Location ***********/
+.location {
+    background-color: var(--main-bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.location>i {
+    margin-right: 17px;
+}
+
+/****** Location ***********/
+/****** Banner ***********/
+.banner>H2 {
+    text-align: center;
+}
+
+.banner__txt {
+    text-align: center;
+}
+
+/****** Banner ***********/
+
+/****** Button ***********/
+
+
+.banner>button {
+    width: 218px;
+    height: 50px;
+    background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+    background-color: #9356DC;
+    border-radius: 25px;
+    color: white;
+}
+
+/****** Button ***********/
+
+
+
+/****** Main ***********/
+/****** Footer ***********/
+/****** Footer ***********/
