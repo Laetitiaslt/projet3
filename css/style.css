@@ -12,6 +12,10 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.card__body--icon .heart__clicked {
+  color: linear-gradient(200.64deg, #9356DC -5.2%, #ff79da 110.74%);
+}
+
 .location {
   display: flex;
   background-color: #eaeaea;
@@ -30,6 +34,10 @@ body {
 }
 .banner .banner__txt {
   font-weight: 300;
+  width: 315px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .functioning .functioning__box {
@@ -60,6 +68,14 @@ body {
   text-align: start;
 }
 
+h2 {
+  margin-left: 20px;
+  font-size: 24px;
+}
+
+.restaurant {
+  background-color: #F7F7F7;
+}
 .restaurant .restaurant__card {
   border-radius: 15px;
   width: 346px;
@@ -77,9 +93,11 @@ body {
   border-radius: 20px 20px 0 0;
 }
 .restaurant .card {
+  background-color: white;
   margin: 0 auto;
   border-radius: 15px;
   width: 346px;
+  margin-bottom: 18px;
 }
 .restaurant .card .card__illustration {
   margin: 0;
@@ -96,12 +114,37 @@ body {
      object-position: center 60%;
   border-radius: 20px 20px 0 0;
 }
+.restaurant .card .card__body {
+  margin-left: 16px;
+  margin-right: 25px;
+  padding-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.restaurant .card .card__body .card__body--title {
+  margin-top: 13px;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+.restaurant .card .card__body .card__body--content {
+  margin: 0;
+}
+.restaurant .card .card__body .card__body--icon {
+  align-items: right;
+  justify-content: center;
+  font-size: 21px;
+}
 .restaurant .card .card__content {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  padding: 13px;
+}
+.restaurant .card .card__content .card__body--title {
+  font-size: 18px;
 }
 body {
   margin: 0px;
@@ -115,4 +158,5 @@ body {
   font-weight: 400px;
   font-size: 30px;
   text-align: center;
+  margin-bottom: 8px;
 }/*# sourceMappingURL=style.css.map */

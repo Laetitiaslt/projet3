@@ -7,3 +7,9 @@
     color: white;
     font-family: $main-font;
 }
+
+.card__body--icon {
+    .heart__clicked {
+        color: linear-gradient(200.64deg, $primary-color -5.2%, $secondary-color 110.74%);
+    }
+}
