@@ -76,7 +76,27 @@ body {
      object-position: center 60%;
   border-radius: 20px 20px 0 0;
 }
-.restaurant .card__content {
+.restaurant .card {
+  margin: 0 auto;
+  border-radius: 15px;
+  width: 346px;
+}
+.restaurant .card .card__illustration {
+  margin: 0;
+}
+.restaurant .card .card__illustration .card__illustration--img {
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 174px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center 60%;
+     object-position: center 60%;
+  border-radius: 20px 20px 0 0;
+}
+.restaurant .card .card__content {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -89,6 +109,8 @@ body {
 
 .header__logo {
   padding-top: 14px;
+  padding-bottom: 5px;
+  margin-top: 0;
   font-family: "Shrikhand";
   font-weight: 400px;
   font-size: 30px;

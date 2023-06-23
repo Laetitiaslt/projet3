@@ -77,13 +77,35 @@
         }
     }
 
-    .card__content {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
+    .card {
+        margin: 0 auto;
+        border-radius: 15px;
+        width: 346px;
 
-        .card__content--heart {}
+        .card__illustration {
+            margin: 0;
+
+            .card__illustration--img {
+                width: 100%;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                height: 174px;
+                object-fit: cover;
+                object-position: center 60%;
+                border-radius: 20px 20px 0 0;
+
+            }
+        }
+
+        .card__content {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+
+            .card__content--heart {}
+        }
     }
 }
