@@ -2,7 +2,12 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
 .btn--pink-purple {
+  justify-content: center;
   background: linear-gradient(200.64deg, #9356DC -5.2%, #ff79da 110.74%);
   border-radius: 25px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
@@ -12,8 +17,147 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-.card__body--icon .heart__clicked {
-  color: linear-gradient(200.64deg, #9356DC -5.2%, #ff79da 110.74%);
+.header__logo {
+  padding-top: 14px;
+  padding-bottom: 5px;
+  margin-top: 0;
+  font-family: "Shrikhand";
+  font-weight: 400px;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.header__logo {
+  padding-top: 14px;
+  padding-bottom: 5px;
+  margin-top: 0;
+  font-family: "Shrikhand";
+  font-weight: 400px;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.footer__logo {
+  font-family: "Shrikhand";
+  font-weight: 400px;
+  font-weight: 300;
+  color: white;
+  margin: 0;
+  font-size: 22px;
+  margin-bottom: 16px;
+}
+
+#heartCheckbox {
+  display: none;
+}
+
+#heart {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  position: relative;
+}
+
+#heartCheckbox:checked ~ #heart {
+  margin: auto;
+}
+
+#heart i {
+  font-size: 27px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#heart i:first-child {
+  z-index: 2;
+}
+
+#heart i:last-child {
+  background: linear-gradient(200.64deg, #9356DC -5.2%, #ff79da 110.74%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  z-index: 1;
+  display: none;
+}
+
+#heartCheckbox:checked ~ #heart i:first-child {
+  display: none;
+}
+
+#heartCheckbox:checked ~ #heart i:last-child {
+  display: initial;
+}
+
+.card {
+  background-color: white;
+  margin: 0 auto;
+  border-radius: 15px;
+  width: 346px;
+  margin-bottom: 18px;
+}
+.card .card__illustration {
+  margin: 0;
+}
+.card .card__illustration .card__illustration--img {
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 174px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center 60%;
+     object-position: center 60%;
+  border-radius: 20px 20px 0 0;
+}
+.card .card__body {
+  margin-left: 16px;
+  margin-right: 25px;
+  padding-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card .card__body .card__body--text {
+  color: black;
+  text-decoration: none;
+}
+.card .card__body .card__body--title {
+  margin-top: 13px;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+.card .card__body .card__body--content {
+  margin: 0;
+}
+
+.cardm {
+  border-radius: 15px;
+  background-color: white;
+  padding: 15px;
+  margin-bottom: 12px;
+  font-size: 18px;
+}
+.cardm__header--title {
+  margin: 0;
+  font-size: 18PX;
+}
+.cardm__body {
+  display: inline-block;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+.cardm__body--content, .cardm__body--price {
+  margin: 0;
+}
+.cardm__body--content {
+  font-weight: 300;
+  font-size: 15PX;
 }
 
 .location {
@@ -32,6 +176,10 @@ body {
   background-color: #F7F7F7;
   text-align: center;
 }
+.banner h2 {
+  margin-right: auto;
+  margin-left: auto;
+}
 .banner .banner__txt {
   font-weight: 300;
   width: 315px;
@@ -40,6 +188,9 @@ body {
   margin-right: auto;
 }
 
+.functioning {
+  padding-top: 28px;
+}
 .functioning .functioning__box {
   display: block;
   display: flex;
@@ -75,6 +226,7 @@ h2 {
 
 .restaurant {
   background-color: #F7F7F7;
+  padding-bottom: 48px;
 }
 .restaurant .restaurant__card {
   border-radius: 15px;
@@ -92,71 +244,65 @@ h2 {
      object-position: center 60%;
   border-radius: 20px 20px 0 0;
 }
-.restaurant .card {
-  background-color: white;
-  margin: 0 auto;
-  border-radius: 15px;
-  width: 346px;
-  margin-bottom: 18px;
-}
-.restaurant .card .card__illustration {
-  margin: 0;
-}
-.restaurant .card .card__illustration .card__illustration--img {
-  width: 100%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  height: 174px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center 60%;
-     object-position: center 60%;
-  border-radius: 20px 20px 0 0;
-}
-.restaurant .card .card__body {
-  margin-left: 16px;
-  margin-right: 25px;
-  padding-bottom: 12px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.restaurant .card .card__body .card__body--title {
-  margin-top: 13px;
-  margin-bottom: 5px;
-  font-size: 18px;
-}
-.restaurant .card .card__body .card__body--content {
-  margin: 0;
-}
-.restaurant .card .card__body .card__body--icon {
-  align-items: right;
-  justify-content: center;
-  font-size: 21px;
-}
-.restaurant .card .card__content {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  padding: 13px;
-}
-.restaurant .card .card__content .card__body--title {
-  font-size: 18px;
-}
-body {
-  margin: 0px;
+
+.main-container {
+  position: relative;
 }
 
-.header__logo {
-  padding-top: 14px;
-  padding-bottom: 5px;
-  margin-top: 0;
-  font-family: "Shrikhand";
-  font-weight: 400px;
-  font-size: 30px;
-  text-align: center;
-  margin-bottom: 8px;
+.menu__img > img {
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.menu__header {
+  display: flex;
+  justify-content: space-around;
+}
+.menu__header :last-child {
+  margin-top: 18px;
+}
+
+.menu__box {
+  margin-top: -95px;
+  background: #f6f6f6;
+  padding: 10px;
+  overflow: visible;
+  border-radius: 60px;
+  box-sizing: border-box;
+  z-index: 1;
+}
+.menu__box .menu__title {
+  font-weight: 300;
+}
+
+footer {
+  background-color: #353535;
+  padding: 22px 25px;
+}
+footer a {
+  display: inline-block;
+  width: 100%;
+}
+footer .footer__content--icon {
+  display: inline-block;
+  display: flex;
+  align-items: baseline;
+}
+footer .footer__icon {
+  width: 13px;
+  height: 11px;
+  margin-right: 10px;
+}
+footer .footer__content {
+  margin: 0;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  margin-top: 7px;
+}
+
+body {
+  margin: 0px;
 }/*# sourceMappingURL=style.css.map */

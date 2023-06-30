@@ -1,0 +1,43 @@
+#heartCheckbox {
+    display: none;
+
+}
+
+#heart {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    position: relative;
+}
+
+
+#heartCheckbox:checked~#heart {
+    margin: auto;
+}
+
+#heart i {
+    font-size: 27px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#heart i:first-child {
+    z-index: 2;
+}
+
+#heart i:last-child {
+    background: linear-gradient(200.64deg, $primary-color -5.2%, $secondary-color 110.74%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: 1;
+    display: none;
+}
+
+#heartCheckbox:checked~#heart i:first-child {
+    display: none;
+}
+
+#heartCheckbox:checked~#heart i:last-child {
+    display: initial;
+}

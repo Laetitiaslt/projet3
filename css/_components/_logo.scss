@@ -1,0 +1,28 @@
+.header__logo {
+    padding-top: 14px;
+    padding-bottom: 5px;
+    margin-top: 0;
+    @include logo-font;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.header__logo {
+    padding-top: 14px;
+    padding-bottom: 5px;
+    margin-top: 0;
+    @include logo-font;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.footer__logo {
+    @include logo-font;
+    font-weight: 300;
+    color: white;
+    margin: 0;
+    font-size: 22px;
+    margin-bottom: 16px;
+}

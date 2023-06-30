@@ -1,0 +1,32 @@
+footer {
+    background-color: $footer-color;
+    padding: 22px 25px;
+
+    a {
+        display: inline-block;
+        width: 100%;
+
+    }
+
+    .footer__content--icon {
+        display: inline-block;
+        display: flex;
+        align-items: baseline;
+    }
+
+    .footer__icon {
+        width: 13px;
+        height: 11px;
+        margin-right: 10px;
+    }
+
+    .footer__content {
+        margin: 0;
+        color: white;
+        font-family: $main-font;
+        font-weight: 500;
+        margin-top: 7px;
+
+
+    }
+}

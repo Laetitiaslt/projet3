@@ -16,6 +16,11 @@
     background-color: #F7F7F7;
     text-align: center;
 
+    h2 {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
 
     .banner__txt {
         font-weight: 300;
@@ -29,6 +34,7 @@
 }
 
 .functioning {
+    padding-top: 28px;
 
 
 
@@ -71,6 +77,7 @@ h2 {
 
 .restaurant {
     background-color: #F7F7F7;
+    padding-bottom: 48px;
 
     .restaurant__card {
         border-radius: 15px;
@@ -89,69 +96,5 @@ h2 {
         }
     }
 
-    .card {
-        background-color: white;
-        margin: 0 auto;
-        border-radius: 15px;
-        width: 346px;
-        margin-bottom: 18px;
 
-        .card__illustration {
-            margin: 0;
-
-            .card__illustration--img {
-                width: 100%;
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
-
-                height: 174px;
-                object-fit: cover;
-                object-position: center 60%;
-                border-radius: 20px 20px 0 0;
-
-            }
-        }
-
-        .card__body {
-            margin-left: 16px;
-            margin-right: 25px;
-            padding-bottom: 12px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-
-            .card__body--title {
-                margin-top: 13px;
-                margin-bottom: 5px;
-                font-size: 18px;
-            }
-
-            .card__body--content {
-                margin: 0;
-            }
-
-            .card__body--icon {
-                align-items: right;
-                justify-content: center;
-                font-size: 21px;
-            }
-
-        }
-
-        .card__content {
-            display: flex;
-            flex-wrap: wrap;
-            flex-direction: row;
-            align-items: center;
-            justify-content: space-between;
-            padding: 13px;
-
-            .card__body--title {
-                font-size: 18px;
-            }
-
-            .card__content--heart {}
-        }
-    }
 }

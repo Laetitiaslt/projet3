@@ -9,9 +9,14 @@
 // Import des composants
 @import './_components/_button';
 @import './_components/_logo';
+@import './_components/_heart';
+@import './_components/_card';
+
 
 // Import des styles spécifiques aux pages
 @import './_pages/_home';
+@import './_pages/_menu';
+
 
 @import './_layout/_footer';
 @import './_layout/_body';
