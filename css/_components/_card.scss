@@ -50,6 +50,7 @@
 }
 
 .cardm {
+    position: relative;
     border-radius: 15px;
     background-color: white;
     padding: 15px;
@@ -110,5 +111,5 @@
 
 .cardm:hover .cardm__content,
 #checker:checked~.cardm__content {
-    width: calc(100%-100px);
+    width: calc(100% - 100px);
 }
