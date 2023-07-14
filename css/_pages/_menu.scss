@@ -9,15 +9,6 @@
     z-index: -1;
 }
 
-.menu__header {
-    display: flex;
-    justify-content: space-around;
-
-    & :last-child {
-        margin-top: 18px;
-    }
-}
-
 
 .menu__box {
     margin-top: -95px;
@@ -28,8 +19,28 @@
     box-sizing: border-box;
     z-index: 1;
 
-    .menu__title {
-        font-weight: 300;
+    .menu__header {
+       
+        align-items:baseline;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 5px;
+        padding-right: 29px;
+
     }
 
+    .header__logo { font-size: 28px;
+        margin-top: 8px;
+        font-weight: 400;
+    }
+
+
+.menu__title {
+    font-size: 16px;
+    font-weight: 300;
+    display: block;
+    width: 40px;
+    border-bottom: 3px solid #99E2D0;
+    padding-bottom: 11px;
+}
 }

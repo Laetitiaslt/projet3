@@ -92,6 +92,14 @@ a {
   display: initial;
 }
 
+.menu__header #heart {
+  width: 22px;
+  height: 22px;
+}
+.menu__header #heart i {
+  font-size: 22px;
+}
+
 .card {
   background-color: white;
   margin: 0 auto;
@@ -135,15 +143,18 @@ a {
   margin: 0;
 }
 
-.cardm {
+.menu .card {
+  overflow: hidden;
   position: relative;
   border-radius: 15px;
   background-color: white;
   padding: 15px;
   margin-bottom: 12px;
   font-size: 18px;
+  box-sizing: border-box;
+  width: 100%;
 }
-.cardm label {
+.menu .card label {
   position: absolute;
   top: 0px;
   right: 0;
@@ -151,44 +162,50 @@ a {
   left: 0;
   z-index: 10;
 }
-.cardm .check {
-  background-color: green;
+.menu .card .check {
+  font-size: 20;
+  color: white;
+  background-color: #99E2D0;
   height: 100%;
-  width: 100px;
+  width: 59px;
   position: absolute;
   top: 0px;
-  right: -100px;
+  right: -59px;
   transition: all 0.3s;
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 5;
+  overflow: hidden;
 }
-.cardm__header--title {
+.menu .card__header--title {
   margin: 0;
   font-size: 18PX;
 }
-.cardm__body {
+.menu .card__body {
   display: inline-block;
   display: flex;
   justify-content: space-between;
-  margin-top: 5px;
+  margin: 5px 0px 0px 0px;
+  padding-bottom: 0;
 }
-.cardm__body--content, .cardm__body--price {
+.menu .card__body--content, .menu .card__body--price {
   margin: 0;
 }
-.cardm__body--content {
+.menu .card__body--content {
   font-weight: 300;
   font-size: 15PX;
 }
-
-.checker {
+.menu .checker {
   display: none !important;
 }
-
-.cardm:hover .cardm__content,
-#checker:checked ~ .cardm__content {
-  width: calc(100% - 100px);
+.menu .card:hover .card__content,
+.menu #checker:checked ~ .card__content {
+  width: calc(100% - 59px);
+}
+.menu .card:hover .check,
+.menu #checker:checked ~ .check {
+  right: 0px;
 }
 
 .location {
@@ -287,14 +304,6 @@ h2 {
   z-index: -1;
 }
 
-.menu__header {
-  display: flex;
-  justify-content: space-around;
-}
-.menu__header :last-child {
-  margin-top: 18px;
-}
-
 .menu__box {
   margin-top: -95px;
   background: #f6f6f6;
@@ -304,8 +313,25 @@ h2 {
   box-sizing: border-box;
   z-index: 1;
 }
+.menu__box .menu__header {
+  align-items: baseline;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 5px;
+  padding-right: 29px;
+}
+.menu__box .header__logo {
+  font-size: 28px;
+  margin-top: 8px;
+  font-weight: 400;
+}
 .menu__box .menu__title {
+  font-size: 16px;
   font-weight: 300;
+  display: block;
+  width: 40px;
+  border-bottom: 3px solid #99E2D0;
+  padding-bottom: 11px;
 }
 
 footer {

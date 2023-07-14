@@ -41,3 +41,12 @@
 #heartCheckbox:checked~#heart i:last-child {
     display: initial;
 }
+.menu__header{
+    #heart{
+        width: 22px;
+        height: 22px;
+    }
+    #heart i{
+        font-size: 22px;
+    }
+}
