@@ -60,7 +60,7 @@ a {
   position: relative;
 }
 
-#heartCheckbox:checked~#heart {
+#heartCheckbox:checked ~ #heart {
   margin: auto;
 }
 
@@ -78,17 +78,17 @@ a {
 #heart i:last-child {
   background: linear-gradient(200.64deg, #9356DC -5.2%, #ff79da 110.74%);
   -webkit-background-clip: text;
-  background-clip: text;
+          background-clip: text;
   -webkit-text-fill-color: transparent;
   z-index: 1;
   display: none;
 }
 
-#heartCheckbox:checked~#heart i:first-child {
+#heartCheckbox:checked ~ #heart i:first-child {
   display: none;
 }
 
-#heartCheckbox:checked~#heart i:last-child {
+#heartCheckbox:checked ~ #heart i:last-child {
   display: initial;
 }
 
@@ -96,7 +96,6 @@ a {
   width: 22px;
   height: 22px;
 }
-
 .menu__header #heart i {
   font-size: 22px;
 }
@@ -108,11 +107,9 @@ a {
   width: 346px;
   margin-bottom: 18px;
 }
-
 .card .card__illustration {
   margin: 0;
 }
-
 .card .card__illustration .card__illustration--img {
   width: 100%;
   display: block;
@@ -120,12 +117,11 @@ a {
   margin-right: auto;
   height: 174px;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   -o-object-position: center 60%;
-  object-position: center 60%;
+     object-position: center 60%;
   border-radius: 20px 20px 0 0;
 }
-
 .card .card__body {
   margin-left: 16px;
   margin-right: 25px;
@@ -134,18 +130,15 @@ a {
   justify-content: space-between;
   align-items: center;
 }
-
 .card .card__body .card__body--text {
   color: black;
   text-decoration: none;
 }
-
 .card .card__body .card__body--title {
   margin-top: 13px;
   margin-bottom: 5px;
   font-size: 18px;
 }
-
 .card .card__body .card__body--content {
   margin: 0;
 }
@@ -160,8 +153,8 @@ a {
   font-size: 18px;
   box-sizing: border-box;
   width: 100%;
+  transition: all 0.3s;
 }
-
 .menu .card label {
   position: absolute;
   top: 0px;
@@ -170,7 +163,6 @@ a {
   left: 0;
   z-index: 10;
 }
-
 .menu .card .check {
   font-size: 20;
   color: white;
@@ -187,12 +179,10 @@ a {
   z-index: 5;
   overflow: hidden;
 }
-
 .menu .card__header--title {
   margin: 0;
   font-size: 18PX;
 }
-
 .menu .card__body {
   display: inline-block;
   display: flex;
@@ -200,29 +190,31 @@ a {
   margin: 5px 0px 0px 0px;
   padding-bottom: 0;
 }
-
-.menu .card__body--content,
-.menu .card__body--price {
+.menu .card__body--content, .menu .card__body--price {
   margin: 0;
 }
-
 .menu .card__body--content {
   font-weight: 300;
   font-size: 15PX;
 }
-
 .menu .checker {
   display: none !important;
 }
-
 .menu .card:hover .card__content,
-.menu #checker:checked~.card__content {
+.menu #checker:checked ~ .card__content {
   width: calc(100% - 59px);
 }
-
 .menu .card:hover .check,
-.menu #checker:checked~.check {
+.menu #checker:checked ~ .check {
   right: 0px;
+}
+
+@media (min-width: 1280px) {
+  .main-container {
+    width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .location {
@@ -231,7 +223,6 @@ a {
   align-items: baseline;
   justify-content: center;
 }
-
 .location i {
   margin-right: 17px;
 }
@@ -242,12 +233,19 @@ a {
   background-color: #F7F7F7;
   text-align: center;
 }
-
 .banner h2 {
   margin-right: auto;
   margin-left: auto;
 }
-
+@media (min-width: 1280px) {
+  .banner h2 {
+    font-size: 40px;
+    margin-bottom: 2px;
+  }
+  .banner h2 br {
+    display: none;
+  }
+}
 .banner .banner__txt {
   font-weight: 300;
   width: 315px;
@@ -255,12 +253,28 @@ a {
   margin-left: auto;
   margin-right: auto;
 }
+@media (min-width: 1280px) {
+  .banner .banner__txt {
+    width: 100%;
+  }
+}
 
 .functioning {
   padding-top: 28px;
 }
-
-.functioning .functioning__box {
+@media (min-width: 1280px) {
+  .functioning .main-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 1280px) {
+  .functioning .main-container h2 {
+    width: 1281px;
+    margin-left: 0;
+  }
+}
+.functioning .main-container .functioning__box {
   display: block;
   display: flex;
   flex-wrap: wrap;
@@ -272,8 +286,7 @@ a {
   border-radius: 20px;
   background-color: #f6f6f6;
 }
-
-.functioning .functioning__box .functioning__box--number {
+.functioning .main-container .functioning__box .functioning__box--number {
   border-radius: 25px;
   height: 24px;
   width: 24px;
@@ -284,8 +297,7 @@ a {
   margin-left: -13px;
   margin-right: 22px;
 }
-
-.functioning .functioning__box .functioning__box--icon {
+.functioning .main-container .functioning__box .functioning__box--icon {
   width: 40px;
   text-align: start;
 }
@@ -298,23 +310,51 @@ h2 {
 .restaurant {
   background-color: #F7F7F7;
   padding-bottom: 48px;
+  justify-content: center;
 }
-
-.restaurant .restaurant__card {
+@media (min-width: 1280px) {
+  .restaurant {
+    padding: 0%;
+  }
+}
+@media (min-width: 1280px) {
+  .restaurant .restaurant__box {
+    padding-top: 30px;
+  }
+}
+@media (min-width: 1280px) {
+  .restaurant .restaurant__box .restaurant__title {
+    margin: 0 auto 28px 0;
+  }
+}
+@media (min-width: 1280px) {
+  .restaurant .restaurant__box .restaurant__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+.restaurant .restaurant__box .restaurant__cards .card {
   border-radius: 15px;
   width: 346px;
 }
-
-.restaurant .restaurant__card .restaurant__card--img {
+@media (min-width: 1280px) {
+  .restaurant .restaurant__box .restaurant__cards .card {
+    width: 490px;
+    height: 251px;
+    margin-bottom: 50px;
+  }
+}
+.restaurant .restaurant__box .restaurant__cards .card .card__illustration--img {
   width: 100%;
   display: block;
   margin-left: auto;
   margin-right: auto;
   height: 174px;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   -o-object-position: center 60%;
-  object-position: center 60%;
+     object-position: center 60%;
   border-radius: 20px 20px 0 0;
 }
 
@@ -322,14 +362,31 @@ h2 {
   position: relative;
 }
 
-.menu__img>img {
+.menu .main-container {
+  width: 100%;
+}
+@media (min-width: 1280px) {
+  .menu .main-container .menu__box {
+    width: 1055px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (min-width: 1280px) {
+  .menu .main-container .menu__box .menu__header {
+    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+.menu .menu__img > img {
   position: relative;
   z-index: 0;
   width: 100%;
   z-index: -1;
 }
-
-.menu__box {
+.menu .menu__box {
   margin-top: -95px;
   background: #f6f6f6;
   padding: 10px;
@@ -338,22 +395,19 @@ h2 {
   box-sizing: border-box;
   z-index: 1;
 }
-
-.menu__box .menu__header {
+.menu .menu__box .menu__header {
   align-items: baseline;
   display: flex;
   justify-content: space-between;
   padding-left: 5px;
   padding-right: 29px;
 }
-
-.menu__box .header__logo {
+.menu .menu__box .header__logo {
   font-size: 28px;
   margin-top: 8px;
   font-weight: 400;
 }
-
-.menu__box .menu__title {
+.menu .menu__box .menu__title {
   font-size: 16px;
   font-weight: 300;
   display: block;
@@ -366,24 +420,20 @@ footer {
   background-color: #353535;
   padding: 22px 25px;
 }
-
 footer a {
   display: inline-block;
   width: 100%;
 }
-
 footer .footer__content--icon {
   display: inline-block;
   display: flex;
   align-items: baseline;
 }
-
 footer .footer__icon {
   width: 13px;
   height: 11px;
   margin-right: 10px;
 }
-
 footer .footer__content {
   margin: 0;
   color: white;
@@ -394,6 +444,4 @@ footer .footer__content {
 
 body {
   margin: 0px;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

@@ -1,3 +1,11 @@
+.main-container {
+    @media (min-width: 1280px) {
+        width: 1080px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
 .location {
     display: flex;
     background-color: #eaeaea;
@@ -19,6 +27,17 @@
     h2 {
         margin-right: auto;
         margin-left: auto;
+
+
+        @media (min-width: 1280px) {
+            font-size: 40px;
+            margin-bottom: 2px;
+
+            br {
+                display: none;
+            }
+        }
+
     }
 
 
@@ -29,6 +48,11 @@
         margin-left: auto;
         margin-right: auto;
 
+        @media (min-width: 1280px) {
+            width: 100%;
+        }
+
+
     }
 
 }
@@ -36,36 +60,49 @@
 .functioning {
     padding-top: 28px;
 
-
-
-    .functioning__box {
-        display: block;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: baseline;
-        width: 322px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 24PX;
-        border-radius: 20px;
-        background-color: #f6f6f6;
-
-        .functioning__box--number {
-            border-radius: 25px;
-            height: 24px;
-            width: 24px;
-            background-color: $primary-color;
-            color: white;
-            text-align: center;
-            align-items: center;
-            margin-left: -13px;
-            margin-right: 22px;
-
+    .main-container {
+        @media (min-width: 1280px) {
+            display: flex;
+            flex-wrap: wrap;
         }
 
-        .functioning__box--icon {
-            width: 40px;
-            text-align: start;
+        h2 {
+            @media (min-width: 1280px) {
+                width: 1281px;
+                margin-left: 0;
+            }
+        }
+
+
+        .functioning__box {
+            display: block;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: baseline;
+            width: 322px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 24PX;
+            border-radius: 20px;
+            background-color: #f6f6f6;
+
+            .functioning__box--number {
+                border-radius: 25px;
+                height: 24px;
+                width: 24px;
+                background-color: $primary-color;
+                color: white;
+                text-align: center;
+                align-items: center;
+                margin-left: -13px;
+                margin-right: 22px;
+
+            }
+
+            .functioning__box--icon {
+                width: 40px;
+                text-align: start;
+            }
         }
     }
 }
@@ -76,25 +113,61 @@ h2 {
 }
 
 .restaurant {
+
+
     background-color: #F7F7F7;
     padding-bottom: 48px;
+    justify-content: center;
 
-    .restaurant__card {
-        border-radius: 15px;
-        width: 346px;
-
-
-        .restaurant__card--img {
-            width: 100%;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            height: 174px;
-            object-fit: cover;
-            object-position: center 60%;
-            border-radius: 20px 20px 0 0;
-        }
+    @media (min-width: 1280px) {
+        padding: 0%;
     }
 
+    .restaurant__box {
 
+        @media (min-width: 1280px) {
+            padding-top: 30px;
+        }
+
+        .restaurant__title {
+            @media (min-width: 1280px) {
+                margin: 0 auto 28px 0;
+            }
+        }
+
+        .restaurant__cards {
+            @media (min-width: 1280px) {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+
+            .card {
+                border-radius: 15px;
+                width: 346px;
+
+                @media (min-width: 1280px) {
+                    width: 490px;
+                    height: 251px;
+                    margin-bottom: 50px;
+                }
+
+
+
+
+                .card__illustration--img {
+                    width: 100%;
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    height: 174px;
+                    object-fit: cover;
+                    object-position: center 60%;
+                    border-radius: 20px 20px 0 0;
+                }
+            }
+
+
+        }
+    }
 }
