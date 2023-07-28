@@ -2,9 +2,32 @@ footer {
     background-color: $footer-color;
     padding: 22px 25px;
 
+    .main-container {
+        @media (min-width: 1280px) {
+            display: flex;
+            flex-direction: row-reverse;
+        }
+    }
+
+    .footer__content {
+        @media (min-width: 1280px) {
+            display: flex;
+            width: 700px;
+
+
+        }
+    }
+
+
     a {
         display: inline-block;
         width: 100%;
+
+        @media (min-width: 1280px) {
+            display: inline;
+        }
+
+
 
     }
 
@@ -20,7 +43,7 @@ footer {
         margin-right: 10px;
     }
 
-    .footer__content {
+    .footer__content--text {
         margin: 0;
         color: white;
         font-family: $main-font;
