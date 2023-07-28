@@ -9,6 +9,7 @@
 
     .card__illustration {
         margin: 0;
+        position: relative;
 
         .card__illustration--img {
             width: 100%;
@@ -20,7 +21,22 @@
             object-fit: cover;
             object-position: center 60%;
             border-radius: 20px 20px 0 0;
+            position: relative;
 
+        }
+
+        .badge {
+            position: absolute;
+            top: 13px;
+            right: 12px;
+        }
+
+        .badge__text {
+            background-color: #99E2D0;
+            color: #008766;
+            font-size: 14px;
+            padding: 5px 10px;
+            border-radius: 4px;
         }
     }
 
@@ -60,7 +76,8 @@
         font-size: 18px;
         box-sizing: border-box;
         width: 100%;
-        transition: all .3s;
+
+
 
 
         & label {
@@ -92,6 +109,7 @@
         &__header--title {
             margin: 0;
             font-size: 18PX;
+            font-weight: 500;
 
         }
 
@@ -129,4 +147,35 @@
     #checker:checked~.check {
         right: 0px;
     }
+
+    .starter,
+    .main-course,
+    .dessert {
+        opacity: 0;
+        transform: translatey(20px);
+        animation: fadeIn 3s forwards;
+    }
+
+    .starter {
+        animation-delay: 1s;
+    }
+
+    .main-course {
+        animation-delay: 2s;
+    }
+
+    .dessert {
+        animation-delay: 3s;
+    }
+
+    @keyframes fadeIn {
+
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+
 }

@@ -7,4 +7,20 @@
     border: 0px;
     color: white;
     font-family: $main-font;
+
+
+    &:hover {
+        transition: all 0.3s;
+        background: linear-gradient(200.64deg, $light-primary-color -5.2%, $light-secondary-color 110.74%);
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.85);
+
+
+    }
+}
+
+.menu__btn {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
 }

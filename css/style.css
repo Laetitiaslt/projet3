@@ -16,16 +16,17 @@ a {
   color: white;
   font-family: "Roboto", sans-serif;
 }
+.btn--pink-purple:hover {
+  transition: all 0.3s;
+  background: linear-gradient(200.64deg, #ae80e5 -5.2%, #fface8 110.74%);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.85);
+}
 
-.header__logo {
-  padding-top: 14px;
-  padding-bottom: 5px;
-  margin-top: 0;
-  font-family: "Shrikhand";
-  font-weight: 400px;
-  font-size: 30px;
-  text-align: center;
-  margin-bottom: 8px;
+.menu__btn {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  margin-top: 30px;
 }
 
 .header__logo {
@@ -37,6 +38,7 @@ a {
   font-size: 30px;
   text-align: center;
   margin-bottom: 8px;
+  color: black;
 }
 
 .footer__logo {
@@ -109,6 +111,7 @@ a {
 }
 .card .card__illustration {
   margin: 0;
+  position: relative;
 }
 .card .card__illustration .card__illustration--img {
   width: 100%;
@@ -121,6 +124,19 @@ a {
   -o-object-position: center 60%;
      object-position: center 60%;
   border-radius: 20px 20px 0 0;
+  position: relative;
+}
+.card .card__illustration .badge {
+  position: absolute;
+  top: 13px;
+  right: 12px;
+}
+.card .card__illustration .badge__text {
+  background-color: #99E2D0;
+  color: #008766;
+  font-size: 14px;
+  padding: 5px 10px;
+  border-radius: 4px;
 }
 .card .card__body {
   margin-left: 16px;
@@ -153,7 +169,6 @@ a {
   font-size: 18px;
   box-sizing: border-box;
   width: 100%;
-  transition: all 0.3s;
 }
 .menu .card label {
   position: absolute;
@@ -182,6 +197,7 @@ a {
 .menu .card__header--title {
   margin: 0;
   font-size: 18PX;
+  font-weight: 500;
 }
 .menu .card__body {
   display: inline-block;
@@ -207,6 +223,28 @@ a {
 .menu .card:hover .check,
 .menu #checker:checked ~ .check {
   right: 0px;
+}
+.menu .starter,
+.menu .main-course,
+.menu .dessert {
+  opacity: 0;
+  transform: translatey(20px);
+  animation: fadeIn 3s forwards;
+}
+.menu .starter {
+  animation-delay: 1s;
+}
+.menu .main-course {
+  animation-delay: 2s;
+}
+.menu .dessert {
+  animation-delay: 3s;
+}
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @media (min-width: 1280px) {
@@ -362,6 +400,50 @@ h2 {
   position: relative;
 }
 
+.loader__background {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f6f6f6;
+  z-index: 1;
+  animation: showLoader 2s linear forwards;
+}
+
+@keyframes showLoader {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+.loader {
+  width: 200px;
+  height: 200px;
+  border: 5px solid black;
+  border-bottom-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+  margin: 10px;
+  animation: rotation 1s infinite linear;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .menu .main-container {
   width: 100%;
 }
@@ -387,11 +469,11 @@ h2 {
   z-index: -1;
 }
 .menu .menu__box {
-  margin-top: -95px;
+  margin-top: -55px;
   background: #f6f6f6;
   padding: 10px;
   overflow: visible;
-  border-radius: 60px;
+  border-radius: 40px 40px 0 0;
   box-sizing: border-box;
   z-index: 1;
 }
@@ -444,4 +526,19 @@ footer .footer__content {
 
 body {
   margin: 0px;
+}
+
+header .main-container a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .main-container a :first-child {
+  font-size: 30px;
+  color: black;
+  margin-left: 10px;
+}
+header .main-container a h1 {
+  text-align: center;
+  flex: 1;
 }/*# sourceMappingURL=style.css.map */
