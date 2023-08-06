@@ -37,7 +37,7 @@ a {
   padding-bottom: 5px;
   margin-top: 0;
   font-family: "Shrikhand";
-  font-weight: 400px;
+  font-weight: 400;
   font-size: 30px;
   text-align: center;
   margin-bottom: 8px;
@@ -46,7 +46,7 @@ a {
 
 .footer__logo {
   font-family: "Shrikhand";
-  font-weight: 400px;
+  font-weight: 400;
   font-weight: 300;
   color: white;
   margin: 0;
@@ -96,15 +96,15 @@ a {
 }
 
 #heartCheckbox-02:checked ~ #heart i:last-child {
-  display: 1;
+  opacity: 1;
 }
 
 #heartCheckbox-03:checked ~ #heart i:last-child {
-  display: 1;
+  opacity: 1;
 }
 
 #heartCheckbox-04:checked ~ #heart i:last-child {
-  display: 1;
+  opacity: 1;
 }
 
 .heart-box {
@@ -196,7 +196,7 @@ a {
   z-index: 10;
 }
 .menu .card .check {
-  font-size: 20;
+  font-size: 20px;
   color: white;
   background-color: #99E2D0;
   height: 100%;
@@ -488,13 +488,13 @@ h2 {
 @media (min-width: 1280px) {
   .menu .main-container .menu__img {
     position: relative;
-    height: 383px;
     overflow: hidden;
+    height: 383px;
   }
-  .menu .main-container .menu__img img {
-    position: absolute;
-    top: -330px;
-  }
+}
+.menu .main-container .menu__img img {
+  position: absolute;
+  height: 383px;
 }
 @media (min-width: 1280px) {
   .menu .main-container .menu__box {
@@ -518,6 +518,7 @@ h2 {
 }
 .menu .menu__img {
   overflow: hidden;
+  height: 275px;
 }
 .menu .menu__img img {
   position: relative;

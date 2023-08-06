@@ -6,19 +6,22 @@
     .main-container {
         width: 100%;
 
-        @media (min-width: 1280px) {
 
-            .menu__img {
+
+        .menu__img {
+            @media (min-width: 1280px) {
                 position: relative;
-                height: 383px;
                 overflow: hidden;
+                height: 383px;
 
-                img {
-                    position: absolute;
-                    top: -330px;
-                }
+            }
+
+            img {
+                position: absolute;
+                height: 383px;
             }
         }
+
 
         .menu__box {
             @media (min-width: 1280px) {
@@ -53,6 +56,8 @@
 
     .menu__img {
         overflow: hidden;
+        height: 275px;
+
 
         img {
             position: relative;
