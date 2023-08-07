@@ -115,6 +115,8 @@
             margin: 0;
             font-size: 18PX;
             font-weight: 500;
+            white-space: nowrap;
+            text-overflow: ellipsis;
 
         }
 
@@ -135,6 +137,9 @@
 
                 font-weight: 300;
                 font-size: 15PX;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
             }
         }
     }
@@ -147,47 +152,48 @@
 
     .card__content {
         Width: 100%;
-        transition: all 0.3s;
+        transition: all 0.3s ease-in-out;
     }
 
     .card:hover .card__content,
-    #checker:checked~.card__content {
+    .checker:checked~.card__content {
         width: calc(100% - 59px);
     }
 
-    .card:hover .check,
-    #checker:checked~.check {
+    .card:hover,
+    .checker:checked~.check {
         right: 0px;
     }
 
-    .starter,
-    .main-course,
-    .dessert {
-        opacity: 0;
-        transform: translatey(20px);
-        animation: fadeIn 0.3s forwards;
+
+
+}
+
+.starter,
+.main-course,
+.dessert {
+    opacity: 0;
+    transform: translatey(20px);
+    animation: fadeIn 0.3s forwards;
+}
+
+.starter {
+    animation-delay: 1s;
+}
+
+.main-course {
+    animation-delay: 2s;
+}
+
+.dessert {
+    animation-delay: 3s;
+}
+
+@keyframes fadeIn {
+
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
-
-    .starter {
-        animation-delay: 1s;
-    }
-
-    .main-course {
-        animation-delay: 2s;
-    }
-
-    .dessert {
-        animation-delay: 3s;
-    }
-
-    @keyframes fadeIn {
-
-
-        to {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    }
-
-
 }
