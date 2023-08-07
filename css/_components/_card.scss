@@ -152,7 +152,7 @@
 
     .card__content {
         Width: 100%;
-        transition: all 0.3s ease-in-out;
+        transition: all 0.3s;
     }
 
     .card:hover .card__content,
@@ -165,6 +165,9 @@
         right: 0px;
     }
 
+    .checker:not(:checked)~.card__content {
+        width: 100%;
+    }
 
 
 }

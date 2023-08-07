@@ -240,7 +240,7 @@ a {
 }
 .menu .card__content {
   Width: 100%;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s;
 }
 .menu .card:hover .card__content,
 .menu .checker:checked ~ .card__content {
@@ -249,6 +249,9 @@ a {
 .menu .card:hover,
 .menu .checker:checked ~ .check {
   right: 0px;
+}
+.menu .checker:not(:checked) ~ .card__content {
+  width: 100%;
 }
 
 .starter,
