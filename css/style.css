@@ -417,15 +417,20 @@ a {
   }
 }
 .functioning .main-container .functioning__box .functioning__box--number {
+  display: block;
   border-radius: 25px;
   height: 24px;
   width: 24px;
   background-color: #9356DC;
   color: white;
   text-align: center;
-  align-items: center;
   margin-left: -13px;
   margin-right: 22px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+.functioning .main-container .functioning__box .functioning__box--number p {
+  align-items: baseline;
 }
 .functioning .main-container .functioning__box .functioning__box--icon {
   width: 40px;
