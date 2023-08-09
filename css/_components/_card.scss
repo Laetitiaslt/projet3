@@ -125,8 +125,9 @@
             display: inline-block;
             display: flex;
             justify-content: space-between;
-            margin: 5px 0px 0px 0px;
+            margin-top: 5px;
             padding-bottom: 0;
+            margin-right: 0;
 
             &--content,
             &--price {
@@ -151,23 +152,21 @@
     }
 
     .card__content {
-        Width: 100%;
         transition: all 0.3s;
+        width: 100%;
     }
 
     .card:hover .card__content,
     .checker:checked~.card__content {
         width: calc(100% - 59px);
+
     }
 
-    .card:hover,
+    .card:hover .check,
     .checker:checked~.check {
         right: 0px;
     }
 
-    .checker:not(:checked)~.card__content {
-        width: 100%;
-    }
 
 
 }
