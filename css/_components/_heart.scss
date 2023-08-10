@@ -3,7 +3,7 @@
 
 }
 
-#heart {
+.heart-icon {
     width: 20px;
     height: 20px;
     display: inline-block;
@@ -15,7 +15,7 @@
     margin: auto;
 }
 
-#heart i {
+.heart-icon i {
     font-size: 27px;
     position: absolute;
     top: 0;
@@ -24,11 +24,11 @@
 }
 
 
-#heart i:first-child {
+.heart-icon i:first-child {
     z-index: 1;
 }
 
-#heart i:last-child {
+.heart-icon i:last-child {
     background: linear-gradient(200.64deg, $primary-color -5.2%, $secondary-color 110.74%);
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -38,24 +38,24 @@
 }
 
 
-#heartCheckbox-01:checked~#heart i:last-child {
+#heartCheckbox-01:checked~#heart_01 i:last-child {
     opacity: 1;
 }
 
 
-#heartCheckbox-02:checked~#heart i:last-child {
-    opacity: 1;
-}
-
-
-
-#heartCheckbox-03:checked~#heart i:last-child {
+#heartCheckbox-02:checked~#heart_02 i:last-child {
     opacity: 1;
 }
 
 
 
-#heartCheckbox-04:checked~#heart i:last-child {
+#heartCheckbox-03:checked~#heart_03 i:last-child {
+    opacity: 1;
+}
+
+
+
+#heartCheckbox-04:checked~#heart_04 i:last-child {
     opacity: 1;
 }
 
